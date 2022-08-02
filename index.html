@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>SRM Table</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__wrapper">
+            <button class="modal__close">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h2 class="modal__title">Добавить ТОВАР</h2>
+            <span class="modal__line"></span>
+
+            <form action="#" class="form" id="modal-form" method="post" target="_blank">
+                <fieldset class="form__fieldset">
+                    <fieldset class="form__wrapper form__wrapper_name">
+                        <label for="name" class="form__label form__label_name">Наименование</label>
+                        <input type="text" id="name" class="form__input">
+                    </fieldset>
+                    <fieldset class="form__wrapper form__wrapper_category">
+                        <label for="category" class="form__label">Категория</label>
+                        <input type="text" class="form__input" id="category">
+                    </fieldset>
+                    <fieldset class="form__wrapper form__wrapper_units">
+                        <label for="units" class="form__label">Единицы измерения</label>
+                        <input type="text" class="form__input" id="units">
+                    </fieldset>
+                    <fieldset class="form__wrapper form__wrapper_sale">
+                        <label for="sale" class="form__label checkbox">Дисконт</label>
+                        <input type="checkbox" class="checkbox__input" id="sale">
+                        <input type="number" class="form__input form__input_sale" min="1" max="15">
+                    </fieldset>
+                    <fieldset class="form__wrapper form__wrapper_spec">
+                        <label for="spec" class="form__label">Описание</label>
+                        <input type="text" class="form__input form__input_spec" id="spec">
+                    </fieldset>
+                    <fieldset class="form__wrapper form__wrapper_number">
+                        <label for="number" class="form__label">количество</label>
+                        <input type="number" class="form__input" id="number" min="1" max="100">
+                    </fieldset>
+                    <fieldset class="form__wrapper form__wrapper_price">
+                        <label for="price" class="form__label">Цена</label>
+                        <input type="number" class="form__input form__input_price" id="price">
+                    </fieldset>
+                    <button type="file" class="form__btn form__btn_download">Добавить изображение</button>
+                </fieldset>
+                <div class="form__submit">
+                    <div class="form__total">
+                        <p class="form__descr">Итоговая стоимость: </p>
+                        <span class="form__span form__span_currency">$ </span>
+                        <span class="form__span form__span_sum">900.00</span>
+                    </div>
+                    <button type="submit" class="form__btn form__btn_submit">Добавить товар</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal__overlay"></div>
+    </div>
+    
+</body>
+</html>
