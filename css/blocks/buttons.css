@@ -14,6 +14,19 @@
     transition: 0.5s ease-in-out;
 }
 
+.modal__close_error {
+    top: 26px;
+    right: 29px;
+}
+
+.modal__edit {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    color: transparent;
+    border: none;
+}
+
 .form__btn {
     height: 39px;
     background: var(--btn-color, #6D5BD0);
@@ -42,6 +55,19 @@
     grid-row: 6 / 7;
     font-size: 14px;
     line-height: 17px;
+}
+
+.form__basket {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 10;
 }
 
 .form__btn_submit {
