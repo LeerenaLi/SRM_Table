@@ -19,7 +19,7 @@
     right: 29px;
 }
 
-.modal__edit {
+.edit {
     width: 15px;
     height: 15px;
     background: transparent;
@@ -27,7 +27,11 @@
     border: none;
 }
 
-.form__btn {
+.edit:hover svg path {
+    stroke: #4f4297;
+}
+
+.btn {
     height: 39px;
     background: var(--btn-color, #6D5BD0);
     border-radius: 6px;
@@ -39,18 +43,19 @@
     color: var(--btn-text-color, #FFFFFF);
 }
 
-.form__btn:hover {
+.btn:hover {
     background: #4f4297;
     border: 2px solid #4f4297;
+    transition: 0.5s ease-in-out;
 }
 
-.form__btn:active, .form__btn:focus {
+.btn:active, .btn:focus {
     border: 2px solid var(--btn-color, #6D5BD0);
     background: var(--btn-text-color, #FFFFFF);
     color: var(--btn-color, #6D5BD0);
 }
 
-.form__btn_download {
+.btn__download {
     grid-column: 2 / 3;
     grid-row: 6 / 7;
     font-size: 14px;
@@ -70,6 +75,71 @@
     z-index: 10;
 }
 
-.form__btn_submit {
+.btn__submit {
     width: 200px;
+}
+
+.btn__submit_srm {
+    width: 181px;
+    float: right;
+}
+
+.filter {
+    position: relative;
+    width: 108px;
+    height: 40px;
+    border: 1px solid #C6C2DE;
+    border-radius: 6px;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #25213B;
+    padding-left: 36px;
+}
+
+.filter::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url("../../icons/filter.svg") no-repeat;
+}
+
+.srm__input {
+    width: 392px;
+    height: 40px;
+    background: #F4F2FF;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 40px;
+}
+
+.srm__search {
+    position: relative;
+}
+
+.srm__search::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url("../../icons/loupe.svg") no-repeat;
+}
+
+.srm__arrow {
+    border: none;
+}
+
+.srm__arrow:hover svg {
+    fill: #25213B;
+    transition: 0.5s ease-in-out;
 }
