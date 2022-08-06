@@ -31,6 +31,31 @@
     stroke: #4f4297;
 }
 
+.edit-table {
+    width: 20px;
+    height: 20px;
+}
+
+.no-img, .corf, .download-img {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    color: transparent;
+    border: none;
+}
+
+.no-img:hover svg {
+    fill: #4f4297;
+}
+
+.corf:hover svg {
+    fill: #4f4297;
+}
+
+.download-img:hover svg {
+    fill: #4f4297;
+}
+
 .btn {
     height: 39px;
     background: var(--btn-color, #6D5BD0);

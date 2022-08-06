@@ -8,6 +8,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 21px;
+    padding-right: 20px;
+    padding-bottom: 8px;
 }
 
 .srm__title {
@@ -16,9 +19,11 @@
     line-height: 29px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .srm__total {
+    padding-top: 7px;
     width: 228px;
     display: flex;
     justify-content: space-between;
@@ -53,7 +58,7 @@
 }
 
 .srm__subheader {
-    padding: 20px 15px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
