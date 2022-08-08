@@ -226,3 +226,77 @@
     line-height: 22px;
     color: var(--btn-color, #6D5BD0);
 }
+
+@media (max-width: 840px) {
+    .fieldset {
+        width: 433px;
+    }
+    .form__fieldset {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, 60px) 20px 39px;
+    }
+    .form__submit {
+        padding: 0;
+    }
+    .form__input_sale {
+        width: 85%;
+    }
+    .form__wrapper_spec {
+        grid-column: 1 / 2;
+        grid-row: 5 / 7;
+    }
+    
+    .form__wrapper_number {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+    
+    .form__wrapper_price {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+    
+    .form__warning {
+        grid-column: 1 / 2;
+        grid-row: 9 / 10;
+        font-size: 10px;
+        text-transform: none;
+    }
+    .form__submit {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .fieldset {
+        width: 300px;
+    }
+    .form__input_sale {
+        width: 76%;
+    }
+}
+
+@media (max-width: 440px) {
+    .fieldset {
+        width: 240px;
+    }
+    .form__input_sale {
+        width: 70%;
+    }
+    .form__warning {
+        line-height: 10px;
+    }
+    .form__product {
+        width: 140px;
+        height: auto;
+    }
+    .form__overlay {
+        width: 100%;
+        height: 140px;
+    }
+    .form__basket {
+        top: 50px;
+    }
+}

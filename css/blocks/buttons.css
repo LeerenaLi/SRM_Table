@@ -168,3 +168,23 @@
     fill: #25213B;
     transition: 0.5s ease-in-out;
 }
+
+@media (max-width: 840px) {
+    .btn__download {
+        grid-column: 1 / 2;
+        grid-row: 10 / 11;
+    }
+    .btn__submit {
+        width: 86%;
+    }
+    .modal__close {
+        top: 16px;
+        right: 16px;
+    }
+}
+
+@media (max-width: 440px) {
+    .btn__download {
+        font-size: 11px;
+    }
+}
